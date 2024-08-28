@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador Futurista</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Rajdhani:wght@400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Encriptador de Mensajes</h1>
+        <div class="presentacion__contenido">
+            <textarea class="presentacion__contenido__input" placeholder="Escribe tu mensaje aquí..."></textarea>
+            <div class="output">
+                <div id="placeholderImage" class="placeholder"></div>
+                <div id="outputText" class="output-text">Ningún mensaje fue encontrado</div>
+            </div>
+            <div class="buttons">
+                <button onclick="encryptText()">Encriptar</button>
+                <button onclick="decryptText()">Desencriptar</button>
+                <button id="copyButton" onclick="copyToClipboard()" style="display:none;">Copiar</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Michelle GS, Alura, 2024</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
